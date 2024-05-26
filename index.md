@@ -3,33 +3,24 @@ title: Home
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+Welcome to the Orre Colosseum website! Our community revolves around 4v4 Double Battles in the Generation III Pokémon games. Our main focus is the Orre Colosseum (“Standard”) format, inspired by the game mode in Pokémon XD: Gale of Darkness. Essentially, this is “VGC 2005”.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+In addition to our Standard format, we occasionally compete in other Generation III 4v4 Double formats, such as Journey Across America (“JAA”).
 
-More specifically, the created site:
+Most of our community’s activity takes place on our Discord server. Join us for discussions, live updates, and battle requests!
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+While we ideally battle using GBA hardware, the global nature of our community prevents in-person battling in most circumstances. As such, most of our battles take place on the Dawn Pokémon Showdown server.
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Format History
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+Orre Colosseum is nearly identical to VGC and can be considered Generation III’s VGC format. A series of official tournaments in 2005 used what can be recognized as VGC rules, and these rules were later implemented into Pokémon XD’s Orre Colosseum game mode with slight modifications.
 
-To get started with creating a site, simply:
+While the PokéFesta 2005 rules limited Pokémon to level 50, the Orre Colosseum game mode permits Pokémon up to level 100, with opponents’ Pokémon matching the level of the player’s strongest Pokémon (starting with a minimum of 60). This appears intentional to permit Dragonite and Tyranitar.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+We decided to base our format on Orre Colosseum instead of PokéFesta 2005 as it is the most complete version of the format, without limitations on species or movepools.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## Community History
 
-----
+Community founder Akiak sought a Generation III Doubles format similar to VGC, and he found it in XD’s Orre Colosseum gamemode. He created a Smogon thread and Discord server to promote the format, and in time it attracted numerous players. Over time two tournament series, Orre Cup and Mt. Battle, were created. The metagame developed naturally from experimentation, from inspiration from later VGC formats, and through study of the Japanese community that occasionally plays the PokéFesta 2005 format.
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+Today the Orre Colosseum Discord server hosts over 500 members and daily battle challenges. The community is a culmination of the efforts, excitement, and love of its members.
