@@ -3,6 +3,7 @@ description: The (unofficial GitHub version of the) Orre Colosseum website and d
 theme: just-the-docs
 
 url: https://lemonici.github.io/orre-colosseum-docs
+favicon_ico: "/assets/images/favicon.ico"
 
 aux_links:
   Official Site: https://orrecolosseum.wordpress.com/

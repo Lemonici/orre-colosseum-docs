@@ -23,7 +23,7 @@ for j in 1:N
     table = table * join(link_strings) * "|\n"
 
     nums = [all_pkmn[!, "#"][all_pkmn.Name .== i][1] for i in pkmn]
-    pic_strings = ["{% link assets/XD_box_sprites/Box_XD_" * lpad(i, 3, "0") * ".png %}" for i in nums]
+    pic_strings = ["{% link assets/images/XD_box_sprites/Box_XD_" * lpad(i, 3, "0") * ".png %}" for i in nums]
     pic_ref_strings = ["[" * i[1] * "]: " * i[2] * "\n" for i in zip(pkmn, pic_strings)]
     refs = refs * join(pic_ref_strings)
 end

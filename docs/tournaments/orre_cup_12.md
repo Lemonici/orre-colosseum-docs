@@ -7,7 +7,7 @@ nav_order: 1
 
 # Orre Cup 12
 
-![]({% link assets/oc12-banner.png %})
+![]({% link assets/images/oc12-banner.png %})
 
 On April 27th, 2024, our community hosted the 12th Orre Cup. A total of 23 players[^1] competed in a 5-round Swiss tournament followed by an 8-player single elimination playoffs.
 
