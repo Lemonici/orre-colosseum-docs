@@ -14,14 +14,9 @@ This was the official tournament format in the United States in 2006.
 
 ### Restrictions
 
-- Banned:
-    - Mew
-    - Celebi
-    - Jirachi
-    - Deoxys
+- Banned: [Mythicals] – Mew, Celebi, Jirachi, Deoxys
 
-- Permitted:
-    - the other 382 Pokémon
+- Permitted: the other 382 Pokémon
 
 ## Classic
 
@@ -31,22 +26,8 @@ Pokémon level: 1-50
 
 ### Restrictions
 
-- Banned:
-    - Pokémon species, moves, or held items only obtainable in FireRed, LeafGreen, Emerald, or XD: Gale of Darkness
-    - Restrictedsand Mythicals
-        – Mewtwo
-        - Mew
-        - Lugia
-        - Ho-oh
-        - Celebi
-        - Kyogre
-        - Groudon
-        - Rayquaza
-        - Jirachi
-        - Deoxys
-
-- Permitted:
-    - Pokémon obtainable in Ruby, Sapphire, and Colosseum
+- Banned: Pokémon species, moves, or held items only obtainable in FireRed, LeafGreen, Emerald, or XD: Gale of Darkness; [Restricteds, Mythicals] – Mewtwo, Mew, Lugia, Ho-oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys.
+- Permitted: Pokémon obtainable in Ruby, Sapphire, and Colosseum
 
 ## Neo
 

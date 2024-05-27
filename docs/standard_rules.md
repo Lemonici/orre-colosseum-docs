@@ -30,17 +30,7 @@ This format is based on Pokémon XD’s Orre Colosseum.
 - Freeze Clause
 
 ### Restrictions
-- Banned:
-    - Mewtwo
-    - Mew
-    - Lugia
-    - Ho-oh
-    - Celebi
-    - Kyogre
-    - Groudo
-    - Rayquaza
-    - Jirachi
-    - Deoxys
+- Banned: Mewtwo, Mew, Lugia, Ho-oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys
 - Permitted: the other 376 Pokémon
 
 ### Tiebreak Mechanics
