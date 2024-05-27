@@ -1,20 +1,34 @@
-using CSV, DataFramesMeta, HTTP
+using CSV, DataFramesMeta
 
-pkmn = ["Starmie", "Tauros", "Raikou"]
-all_pkmn = CSV.read(download("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6/raw/92200bc0a673d5ce2110aaad4544ed6c4010f687/pokemon.csv"), DataFrame)
+# Replace with current vr
+dat = CSV.read("vr_data/vr4.csv", DataFrame, header=false)
 
-link_strings = ["[![" * i * "]](https://bulbapedia.bulbagarden.net/wiki/" * i * "_(Pok%C3%A9mon)) " for i in replace.(pkmn, " " => "_")]
-println(join(link_strings))
+# Pokemon CSV courtesy of armgilles
+# all_pkmn = CSV.read(download("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6/raw/92200bc0a673d5ce2110aaad4544ed6c4010f687/pokemon.csv"), DataFrame)
+all_pkmn = CSV.read("vr_data/pokemon.csv", DataFrame)
 
-nums = [all_pkmn[!, "#"][all_pkmn.Name .== i][1] for i in pkmn]
+N = nrow(dat)
+M = ncol(dat)
 
-pic_strings = similar(pkmn)
+table = ""
+refs = ""
 
-for i in eachindex(nums)
-    page = String(HTTP.get("https://archives.bulbagarden.net/wiki/File:Box_XD_" * lpad(nums[i], 3, "0") * ".png").body)
-    idx = findfirst("/Box_XD", page)[1]
-    pic_strings[i] = page[(idx - 50):(idx + 14)]
+for j in 1:N
+    table = table * "|" * dat[j, 1] * "|"
+
+    pkmn = [values(dat[j, 2:M])...]
+    pkmn = pkmn[.!ismissing.(pkmn)]
+
+    link_strings = ["[![" * i[1] * "]](https://bulbapedia.bulbagarden.net/wiki/" * i[2] * "_(Pok%C3%A9mon)) " for i in zip(pkmn, replace.(pkmn, " " => "_"))]
+    table = table * join(link_strings) * "|\n"
+
+    nums = [all_pkmn[!, "#"][all_pkmn.Name .== i][1] for i in pkmn]
+    pic_strings = ["{% link assets/XD_box_sprites/Box_XD_" * lpad(i, 3, "0") * ".png %}" for i in nums]
+    pic_ref_strings = ["[" * i[1] * "]: " * i[2] * "\n" for i in zip(pkmn, pic_strings)]
+    refs = refs * join(pic_ref_strings)
 end
 
-pic_ref_strings = ["[" * i[1] * "]: " * i[2] * "\n" for i in zip(replace.(pkmn, " " => "_"), pic_strings)]
-println(join(pic_ref_strings))
+
+println(table)
+
+println(refs)
